@@ -39,3 +39,5 @@ ScrollReveal({
 });
   ScrollReveal().reveal('.home-content, .heading', { origin:'top'});
   ScrollReveal().reveal('.home-img, .portfolio-container, .portfolio-box, .contact form', { origin:'bottom'});
+
+

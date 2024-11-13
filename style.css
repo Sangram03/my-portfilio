@@ -25,6 +25,7 @@ section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+
 body{
     background: var(--bg-color);
     color:var(--text-color)
@@ -182,11 +183,11 @@ span{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
-.skills-container{
+ .skills-container{
     row-gap: 7rem;
     text-align: center;
+ }
 
-}
 .skills-data{
     display:flex;
     justify-content: space-between;
@@ -237,7 +238,370 @@ span{
     .skills-py{
         width: 75%;
         
+    } 
+    .skills-js{
+        width: 90%;
     }
+    .skills-node{
+        width: 34%;
+    }
+    
+
+
+    /* css by chatgpt*/
+/* General Styling */
+/* General Styling */
+.skills {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+.heading {
+    font-size: 2.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.heading span {
+    color: rgb(227, 12, 12);
+}
+
+.skills-container {
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-subtitle {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Skills Data and Bar */
+.skills-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.skills-names {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    position: relative;
+}
+
+.skills-icon {
+    font-size: 2em;
+    color: #555;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+    position: relative;  /* Added to support ring animations */
+}
+
+/* Ring animation surrounding icons */
+.skills-names:hover .pl__ring {
+    animation: ringA 2s linear infinite;
+}
+
+.pl {
+    width: 6em;
+    height: 6em;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.pl__ring {
+    animation: ringA 2s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.pl__ring--a {
+    stroke: #f42f25;
+}
+
+.pl__ring--b {
+    animation-name: ringB;
+    stroke: #f49725;
+}
+
+.pl__ring--c {
+    animation-name: ringC;
+    stroke: #255ff4;
+}
+
+.pl__ring--d {
+    animation-name: ringD;
+    stroke: #f42582;
+}
+
+/* Animations */
+@keyframes ringA {
+    from, 4% {
+        stroke-dasharray: 0 660;
+        stroke-width: 20;
+        stroke-dashoffset: -330;
+    }
+
+    12% {
+        stroke-dasharray: 60 600;
+        stroke-width: 30;
+        stroke-dashoffset: -335;
+    }
+
+    32% {
+        stroke-dasharray: 60 600;
+        stroke-width: 30;
+        stroke-dashoffset: -595;
+    }
+
+    40%, 54% {
+        stroke-dasharray: 0 660;
+        stroke-width: 20;
+        stroke-dashoffset: -660;
+    }
+
+    62% {
+        stroke-dasharray: 60 600;
+        stroke-width: 30;
+        stroke-dashoffset: -665;
+    }
+
+    82% {
+        stroke-dasharray: 60 600;
+        stroke-width: 30;
+        stroke-dashoffset: -925;
+    }
+
+    90%, to {
+        stroke-dasharray: 0 660;
+        stroke-width: 20;
+        stroke-dashoffset: -990;
+    }
+}
+
+@keyframes ringB {
+    from, 12% {
+        stroke-dasharray: 0 220;
+        stroke-width: 20;
+        stroke-dashoffset: -110;
+    }
+
+    20% {
+        stroke-dasharray: 20 200;
+        stroke-width: 30;
+        stroke-dashoffset: -115;
+    }
+
+    40% {
+        stroke-dasharray: 20 200;
+        stroke-width: 30;
+        stroke-dashoffset: -195;
+    }
+
+    48%, 62% {
+        stroke-dasharray: 0 220;
+        stroke-width: 20;
+        stroke-dashoffset: -220;
+    }
+
+    70% {
+        stroke-dasharray: 20 200;
+        stroke-width: 30;
+        stroke-dashoffset: -225;
+    }
+
+    90% {
+        stroke-dasharray: 20 200;
+        stroke-width: 30;
+        stroke-dashoffset: -305;
+    }
+
+    98%, to {
+        stroke-dasharray: 0 220;
+        stroke-width: 20;
+        stroke-dashoffset: -330;
+    }
+}
+
+@keyframes ringC {
+    from {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: 0;
+    }
+
+    8% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -5;
+    }
+
+    28% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -175;
+    }
+
+    36%, 58% {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: -220;
+    }
+
+    66% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -225;
+    }
+
+    86% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -395;
+    }
+
+    94%, to {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: -440;
+    }
+}
+
+@keyframes ringD {
+    from, 8% {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: 0;
+    }
+
+    16% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -5;
+    }
+
+    36% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -175;
+    }
+
+    44%, 50% {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: -220;
+    }
+
+    58% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -225;
+    }
+
+    78% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -395;
+    }
+
+    86%, to {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: -440;
+    }
+}
+.skills-names{
+    color: #1511e3;
+    font-size: 12px;
+
+}
+.skills-icon{
+    color: red;
+}
+
+/* Skills Bar Styling */
+.skills-bar {
+    position: relative;
+    width: 60%;
+    height: 10px;
+    background: rgb(230, 233, 227);
+    color: #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 20px;
+    animation: barAnimation 2s ease-out forwards ; /* Adding bar animation */
+}
+
+.skills-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(15, 218, 69);
+    width: 0;
+    border-radius: 5px;
+    transition: width 1s ease;
+    animation: fillBar 2s ease-out forwards infinite; /* Adding keyframe animation */
+}
+
+/* Keyframes for skill bar animation */
+@keyframes barAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%; /* You can adjust this value dynamically based on the skill level */
+    }
+}
+
+@keyframes fillBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%; /* Adjust this width to match each skill bar’s percentage */
+    }
+}
+
+/* Different Colors for Skill Bars */
+.skills-bar.skills-html::before { background-color: #e34f26; }   /* HTML - Orange */
+.skills-bar.skills-css::before { background-color: #29f140; }    /* CSS - Blue */
+.skills-js::before { background-color: #f0db4f; }     /* JavaScript - Yellow */
+.skills-py::before { background-color: #306998; }     /* Python - Blue */
+.skills-java::before { background-color: #1928b0; }   /* Java - Brown */
+.skills-node::before { background-color: #6374a0; }   /* Node.js - Green */
+.skills-c::before { background-color: #9c0075; }      /* C - Blue */
+
+/* Hover Effect on Icons */
+.skills-names:hover .skills-icon {
+    color:  #17f134;
+    animation: iconHover 0.3s ease-in-out; /* Icon hover animation */
+}
+
+/* Keyframes for icon hover effect */
+@keyframes iconHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
     .portfolio {
         background: var(--bg-color);
 
@@ -486,3 +850,4 @@ span{
             margin-top: 2rem;
         }
     }
+
